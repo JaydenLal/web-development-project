@@ -1,0 +1,351 @@
+student_id,first_name,last_name,dob,school,game_id,game,genre,tournament_id,city,year,score
+S022,Jack,Lee,2009-11-21,Auckland Central College,G002,Rocket Arena,Sports,T012,Wellington,2026,103
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G008,Ultimate Football Pro,Sports,T006,Dunedin,2024,735
+S055,Isla,Brown,2011-01-22,Westlake Academy,G007,Galaxy Fighters,Fighting,T006,Dunedin,2024,417
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G008,Ultimate Football Pro,Sports,T006,Dunedin,2024,880
+S049,Amelia,Smith,2010-03-02,Harbour View High,G004,Speed Racers X,Racing,T014,Auckland,2026,235
+S025,Noah,King,2011-04-15,Southern Tech School,G001,Valor Strike,FPS,T014,Auckland,2026,474
+S025,Noah,King,2011-04-15,Southern Tech School,G005,Battle Zone Elite,FPS,T014,Auckland,2026,996
+S012,Daniel,King,2009-06-27,Auckland Central College,G007,Galaxy Fighters,Fighting,T006,Dunedin,2024,120
+S059,Sophia,Perera,2008-06-13,Harbour View High,G005,Battle Zone Elite,FPS,T002,Auckland,2026,980
+S017,Jack,Walker,2010-06-08,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T001,Dunedin,2024,439
+S004,Liam,Singh,2009-11-28,Harbour View High,G007,Galaxy Fighters,Fighting,T005,Dunedin,2024,160
+S030,Grace,Lee,2011-01-03,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,712
+S029,Daniel,Singh,2011-01-19,Harbour View High,G005,Battle Zone Elite,FPS,T014,Auckland,2026,499
+S037,Jack,Lee,2012-06-17,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,757
+S030,Grace,Lee,2011-01-03,Northside Secondary,G005,Battle Zone Elite,FPS,T006,Dunedin,2024,99
+S012,Daniel,King,2009-06-27,Auckland Central College,G002,Rocket Arena,Sports,T001,Dunedin,2024,488
+S043,Noah,King,2012-03-03,Auckland Central College,G008,Ultimate Football Pro,Sports,T012,Wellington,2026,185
+S031,Ava,Singh,2008-03-31,Northside Secondary,G001,Valor Strike,FPS,T008,Hamilton,2024,604
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T014,Auckland,2026,428
+S058,Leo,Smith,2009-06-25,Westlake Academy,G004,Speed Racers X,Racing,T010,Dunedin,2025,934
+S003,Jack,Perera,2010-02-15,Southern Tech School,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,971
+S059,Sophia,Perera,2008-06-13,Harbour View High,G005,Battle Zone Elite,FPS,T012,Wellington,2026,644
+S058,Leo,Smith,2009-06-25,Westlake Academy,G001,Valor Strike,FPS,T006,Dunedin,2024,797
+S025,Noah,King,2011-04-15,Southern Tech School,G004,Speed Racers X,Racing,T012,Wellington,2026,959
+S005,Jack,Taylor,2009-11-21,Harbour View High,G005,Battle Zone Elite,FPS,T005,Dunedin,2024,222
+S027,Ruby,Scott,2010-12-25,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T007,Hamilton,2025,94
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G001,Valor Strike,FPS,T008,Hamilton,2024,739
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G004,Speed Racers X,Racing,T001,Dunedin,2024,325
+S034,Emma,Fernando,2008-01-01,Auckland Central College,G003,Legends Clash,MOBA,T013,Wellington,2026,804
+S060,Ava,Brown,2012-04-01,Southern Tech School,G004,Speed Racers X,Racing,T005,Dunedin,2024,561
+S056,Noah,Wilson,2009-11-27,Westlake Academy,G008,Ultimate Football Pro,Sports,T004,Christchurch,2026,339
+S034,Emma,Fernando,2008-01-01,Auckland Central College,G002,Rocket Arena,Sports,T002,Auckland,2026,503
+S040,Amelia,Taylor,2009-11-16,Auckland Central College,G005,Battle Zone Elite,FPS,T013,Wellington,2026,249
+S034,Emma,Fernando,2008-01-01,Auckland Central College,G002,Rocket Arena,Sports,T011,Christchurch,2025,451
+S027,Ruby,Scott,2010-12-25,Auckland Central College,G008,Ultimate Football Pro,Sports,T002,Auckland,2026,111
+S037,Jack,Lee,2012-06-17,Auckland Central College,G007,Galaxy Fighters,Fighting,T013,Wellington,2026,719
+S028,Ethan,Chen,2011-08-01,Harbour View High,G006,Fantasy Kingdoms,Strategy,T003,Christchurch,2024,555
+S009,Grace,Patel,2012-02-08,Auckland Central College,G004,Speed Racers X,Racing,T015,Dunedin,2025,266
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G001,Valor Strike,FPS,T004,Christchurch,2026,981
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G002,Rocket Arena,Sports,T007,Hamilton,2025,999
+S002,Emma,King,2009-06-29,Auckland Central College,G001,Valor Strike,FPS,T007,Hamilton,2025,721
+S021,Mia,Singh,2011-09-09,Southern Tech School,G001,Valor Strike,FPS,T001,Dunedin,2024,996
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,348
+S060,Ava,Brown,2012-04-01,Southern Tech School,G003,Legends Clash,MOBA,T005,Dunedin,2024,165
+S019,Ruby,Smith,2010-02-06,Harbour View High,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,577
+S002,Emma,King,2009-06-29,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T013,Wellington,2026,206
+S030,Grace,Lee,2011-01-03,Northside Secondary,G004,Speed Racers X,Racing,T007,Hamilton,2025,277
+S033,Mia,Lee,2011-11-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T007,Hamilton,2025,623
+S013,Ethan,Taylor,2012-04-23,Westlake Academy,G007,Galaxy Fighters,Fighting,T002,Auckland,2026,975
+S032,Ava,Wilson,2009-01-30,Southern Tech School,G001,Valor Strike,FPS,T005,Dunedin,2024,192
+S031,Ava,Singh,2008-03-31,Northside Secondary,G002,Rocket Arena,Sports,T003,Christchurch,2024,174
+S030,Grace,Lee,2011-01-03,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T009,Christchurch,2026,679
+S002,Emma,King,2009-06-29,Auckland Central College,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,411
+S019,Ruby,Smith,2010-02-06,Harbour View High,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,449
+S060,Ava,Brown,2012-04-01,Southern Tech School,G001,Valor Strike,FPS,T002,Auckland,2026,570
+S054,Charlotte,Perera,2008-10-08,Auckland Central College,G002,Rocket Arena,Sports,T010,Dunedin,2025,730
+S021,Mia,Singh,2011-09-09,Southern Tech School,G002,Rocket Arena,Sports,T013,Wellington,2026,734
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G007,Galaxy Fighters,Fighting,T003,Christchurch,2024,478
+S009,Grace,Patel,2012-02-08,Auckland Central College,G008,Ultimate Football Pro,Sports,T003,Christchurch,2024,921
+S056,Noah,Wilson,2009-11-27,Westlake Academy,G001,Valor Strike,FPS,T003,Christchurch,2024,857
+S051,Grace,Wilson,2012-11-18,Northside Secondary,G002,Rocket Arena,Sports,T006,Dunedin,2024,83
+S007,Noah,Roberts,2012-05-03,Westlake Academy,G003,Legends Clash,MOBA,T004,Christchurch,2026,518
+S028,Ethan,Chen,2011-08-01,Harbour View High,G004,Speed Racers X,Racing,T011,Christchurch,2025,464
+S004,Liam,Singh,2009-11-28,Harbour View High,G001,Valor Strike,FPS,T003,Christchurch,2024,167
+S030,Grace,Lee,2011-01-03,Northside Secondary,G002,Rocket Arena,Sports,T003,Christchurch,2024,734
+S003,Jack,Perera,2010-02-15,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T008,Hamilton,2024,881
+S053,Ruby,Perera,2009-10-27,Westlake Academy,G004,Speed Racers X,Racing,T014,Auckland,2026,294
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G007,Galaxy Fighters,Fighting,T006,Dunedin,2024,737
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G002,Rocket Arena,Sports,T011,Christchurch,2025,59
+S019,Ruby,Smith,2010-02-06,Harbour View High,G006,Fantasy Kingdoms,Strategy,T011,Christchurch,2025,460
+S023,Grace,Lee,2012-01-20,Westlake Academy,G004,Speed Racers X,Racing,T014,Auckland,2026,112
+S004,Liam,Singh,2009-11-28,Harbour View High,G002,Rocket Arena,Sports,T002,Auckland,2026,996
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G005,Battle Zone Elite,FPS,T004,Christchurch,2026,178
+S036,Amelia,Roberts,2008-06-18,Auckland Central College,G001,Valor Strike,FPS,T013,Wellington,2026,956
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G005,Battle Zone Elite,FPS,T015,Dunedin,2025,480
+S036,Amelia,Roberts,2008-06-18,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T006,Dunedin,2024,691
+S009,Grace,Patel,2012-02-08,Auckland Central College,G007,Galaxy Fighters,Fighting,T015,Dunedin,2025,84
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G005,Battle Zone Elite,FPS,T006,Dunedin,2024,370
+S045,Olivia,Roberts,2009-09-19,Southern Tech School,G001,Valor Strike,FPS,T013,Wellington,2026,408
+S033,Mia,Lee,2011-11-03,Northside Secondary,G001,Valor Strike,FPS,T011,Christchurch,2025,351
+S006,Ava,Roberts,2008-12-01,Northside Secondary,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,238
+S040,Amelia,Taylor,2009-11-16,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T008,Hamilton,2024,930
+S007,Noah,Roberts,2012-05-03,Westlake Academy,G004,Speed Racers X,Racing,T007,Hamilton,2025,700
+S044,Ruby,Lee,2012-04-01,Westlake Academy,G002,Rocket Arena,Sports,T004,Christchurch,2026,260
+S047,Charlotte,Perera,2010-12-31,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T007,Hamilton,2025,846
+S031,Ava,Singh,2008-03-31,Northside Secondary,G005,Battle Zone Elite,FPS,T011,Christchurch,2025,961
+S036,Amelia,Roberts,2008-06-18,Auckland Central College,G003,Legends Clash,MOBA,T007,Hamilton,2025,77
+S017,Jack,Walker,2010-06-08,Westlake Academy,G001,Valor Strike,FPS,T013,Wellington,2026,985
+S058,Leo,Smith,2009-06-25,Westlake Academy,G003,Legends Clash,MOBA,T013,Wellington,2026,247
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G003,Legends Clash,MOBA,T002,Auckland,2026,189
+S046,Leo,Taylor,2012-05-08,Harbour View High,G002,Rocket Arena,Sports,T005,Dunedin,2024,174
+S058,Leo,Smith,2009-06-25,Westlake Academy,G002,Rocket Arena,Sports,T006,Dunedin,2024,108
+S059,Sophia,Perera,2008-06-13,Harbour View High,G005,Battle Zone Elite,FPS,T006,Dunedin,2024,183
+S017,Jack,Walker,2010-06-08,Westlake Academy,G007,Galaxy Fighters,Fighting,T002,Auckland,2026,685
+S017,Jack,Walker,2010-06-08,Westlake Academy,G002,Rocket Arena,Sports,T011,Christchurch,2025,597
+S008,Noah,Smith,2010-02-12,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T005,Dunedin,2024,868
+S052,Ava,Singh,2012-06-08,Westlake Academy,G005,Battle Zone Elite,FPS,T008,Hamilton,2024,290
+S001,Mia,Patel,2008-04-17,Northside Secondary,G002,Rocket Arena,Sports,T014,Auckland,2026,165
+S040,Amelia,Taylor,2009-11-16,Auckland Central College,G002,Rocket Arena,Sports,T015,Dunedin,2025,835
+S029,Daniel,Singh,2011-01-19,Harbour View High,G007,Galaxy Fighters,Fighting,T014,Auckland,2026,1000
+S057,Sophia,Roberts,2009-05-13,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T011,Christchurch,2025,234
+S053,Ruby,Perera,2009-10-27,Westlake Academy,G003,Legends Clash,MOBA,T007,Hamilton,2025,50
+S027,Ruby,Scott,2010-12-25,Auckland Central College,G004,Speed Racers X,Racing,T004,Christchurch,2026,987
+S001,Mia,Patel,2008-04-17,Northside Secondary,G007,Galaxy Fighters,Fighting,T003,Christchurch,2024,872
+S055,Isla,Brown,2011-01-22,Westlake Academy,G002,Rocket Arena,Sports,T003,Christchurch,2024,598
+S018,Daniel,Perera,2012-09-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T003,Christchurch,2024,846
+S057,Sophia,Roberts,2009-05-13,Southern Tech School,G007,Galaxy Fighters,Fighting,T014,Auckland,2026,362
+S005,Jack,Taylor,2009-11-21,Harbour View High,G001,Valor Strike,FPS,T002,Auckland,2026,860
+S037,Jack,Lee,2012-06-17,Auckland Central College,G007,Galaxy Fighters,Fighting,T005,Dunedin,2024,632
+S004,Liam,Singh,2009-11-28,Harbour View High,G004,Speed Racers X,Racing,T015,Dunedin,2025,367
+S020,Noah,Roberts,2012-01-26,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T001,Dunedin,2024,731
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G005,Battle Zone Elite,FPS,T005,Dunedin,2024,951
+S013,Ethan,Taylor,2012-04-23,Westlake Academy,G007,Galaxy Fighters,Fighting,T004,Christchurch,2026,559
+S003,Jack,Perera,2010-02-15,Southern Tech School,G007,Galaxy Fighters,Fighting,T002,Auckland,2026,936
+S052,Ava,Singh,2012-06-08,Westlake Academy,G003,Legends Clash,MOBA,T003,Christchurch,2024,732
+S004,Liam,Singh,2009-11-28,Harbour View High,G004,Speed Racers X,Racing,T015,Dunedin,2025,899
+S005,Jack,Taylor,2009-11-21,Harbour View High,G008,Ultimate Football Pro,Sports,T010,Dunedin,2025,244
+S026,Isla,Brown,2008-01-27,Northside Secondary,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,597
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G002,Rocket Arena,Sports,T014,Auckland,2026,933
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G002,Rocket Arena,Sports,T008,Hamilton,2024,93
+S035,Isla,Scott,2010-11-11,Auckland Central College,G005,Battle Zone Elite,FPS,T012,Wellington,2026,81
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G001,Valor Strike,FPS,T003,Christchurch,2024,925
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G002,Rocket Arena,Sports,T012,Wellington,2026,101
+S054,Charlotte,Perera,2008-10-08,Auckland Central College,G007,Galaxy Fighters,Fighting,T013,Wellington,2026,798
+S057,Sophia,Roberts,2009-05-13,Southern Tech School,G008,Ultimate Football Pro,Sports,T010,Dunedin,2025,443
+S022,Jack,Lee,2009-11-21,Auckland Central College,G003,Legends Clash,MOBA,T011,Christchurch,2025,723
+S026,Isla,Brown,2008-01-27,Northside Secondary,G007,Galaxy Fighters,Fighting,T011,Christchurch,2025,746
+S007,Noah,Roberts,2012-05-03,Westlake Academy,G002,Rocket Arena,Sports,T001,Dunedin,2024,271
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G003,Legends Clash,MOBA,T013,Wellington,2026,772
+S043,Noah,King,2012-03-03,Auckland Central College,G005,Battle Zone Elite,FPS,T006,Dunedin,2024,572
+S027,Ruby,Scott,2010-12-25,Auckland Central College,G005,Battle Zone Elite,FPS,T005,Dunedin,2024,470
+S055,Isla,Brown,2011-01-22,Westlake Academy,G003,Legends Clash,MOBA,T009,Christchurch,2026,591
+S055,Isla,Brown,2011-01-22,Westlake Academy,G002,Rocket Arena,Sports,T014,Auckland,2026,997
+S001,Mia,Patel,2008-04-17,Northside Secondary,G003,Legends Clash,MOBA,T009,Christchurch,2026,827
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G002,Rocket Arena,Sports,T008,Hamilton,2024,982
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G004,Speed Racers X,Racing,T011,Christchurch,2025,867
+S053,Ruby,Perera,2009-10-27,Westlake Academy,G008,Ultimate Football Pro,Sports,T001,Dunedin,2024,430
+S019,Ruby,Smith,2010-02-06,Harbour View High,G008,Ultimate Football Pro,Sports,T006,Dunedin,2024,713
+S048,Mason,Young,2011-07-13,Westlake Academy,G005,Battle Zone Elite,FPS,T014,Auckland,2026,601
+S049,Amelia,Smith,2010-03-02,Harbour View High,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,223
+S003,Jack,Perera,2010-02-15,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T001,Dunedin,2024,649
+S007,Noah,Roberts,2012-05-03,Westlake Academy,G008,Ultimate Football Pro,Sports,T013,Wellington,2026,431
+S049,Amelia,Smith,2010-03-02,Harbour View High,G007,Galaxy Fighters,Fighting,T011,Christchurch,2025,231
+S058,Leo,Smith,2009-06-25,Westlake Academy,G002,Rocket Arena,Sports,T011,Christchurch,2025,682
+S005,Jack,Taylor,2009-11-21,Harbour View High,G004,Speed Racers X,Racing,T010,Dunedin,2025,442
+S009,Grace,Patel,2012-02-08,Auckland Central College,G002,Rocket Arena,Sports,T013,Wellington,2026,549
+S060,Ava,Brown,2012-04-01,Southern Tech School,G004,Speed Racers X,Racing,T015,Dunedin,2025,692
+S051,Grace,Wilson,2012-11-18,Northside Secondary,G008,Ultimate Football Pro,Sports,T006,Dunedin,2024,372
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G007,Galaxy Fighters,Fighting,T013,Wellington,2026,974
+S058,Leo,Smith,2009-06-25,Westlake Academy,G005,Battle Zone Elite,FPS,T006,Dunedin,2024,742
+S031,Ava,Singh,2008-03-31,Northside Secondary,G003,Legends Clash,MOBA,T004,Christchurch,2026,154
+S047,Charlotte,Perera,2010-12-31,Auckland Central College,G001,Valor Strike,FPS,T012,Wellington,2026,578
+S046,Leo,Taylor,2012-05-08,Harbour View High,G003,Legends Clash,MOBA,T006,Dunedin,2024,91
+S009,Grace,Patel,2012-02-08,Auckland Central College,G003,Legends Clash,MOBA,T013,Wellington,2026,714
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,878
+S012,Daniel,King,2009-06-27,Auckland Central College,G004,Speed Racers X,Racing,T009,Christchurch,2026,719
+S012,Daniel,King,2009-06-27,Auckland Central College,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,734
+S001,Mia,Patel,2008-04-17,Northside Secondary,G008,Ultimate Football Pro,Sports,T003,Christchurch,2024,333
+S023,Grace,Lee,2012-01-20,Westlake Academy,G008,Ultimate Football Pro,Sports,T004,Christchurch,2026,118
+S028,Ethan,Chen,2011-08-01,Harbour View High,G008,Ultimate Football Pro,Sports,T007,Hamilton,2025,376
+S004,Liam,Singh,2009-11-28,Harbour View High,G007,Galaxy Fighters,Fighting,T014,Auckland,2026,476
+S045,Olivia,Roberts,2009-09-19,Southern Tech School,G002,Rocket Arena,Sports,T006,Dunedin,2024,504
+S030,Grace,Lee,2011-01-03,Northside Secondary,G001,Valor Strike,FPS,T002,Auckland,2026,88
+S046,Leo,Taylor,2012-05-08,Harbour View High,G006,Fantasy Kingdoms,Strategy,T006,Dunedin,2024,378
+S050,Ava,Taylor,2010-07-20,Northside Secondary,G004,Speed Racers X,Racing,T012,Wellington,2026,611
+S045,Olivia,Roberts,2009-09-19,Southern Tech School,G008,Ultimate Football Pro,Sports,T012,Wellington,2026,837
+S053,Ruby,Perera,2009-10-27,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T011,Christchurch,2025,289
+S003,Jack,Perera,2010-02-15,Southern Tech School,G003,Legends Clash,MOBA,T003,Christchurch,2024,719
+S029,Daniel,Singh,2011-01-19,Harbour View High,G004,Speed Racers X,Racing,T014,Auckland,2026,743
+S054,Charlotte,Perera,2008-10-08,Auckland Central College,G008,Ultimate Football Pro,Sports,T007,Hamilton,2025,704
+S054,Charlotte,Perera,2008-10-08,Auckland Central College,G001,Valor Strike,FPS,T006,Dunedin,2024,714
+S060,Ava,Brown,2012-04-01,Southern Tech School,G003,Legends Clash,MOBA,T005,Dunedin,2024,415
+S035,Isla,Scott,2010-11-11,Auckland Central College,G005,Battle Zone Elite,FPS,T011,Christchurch,2025,123
+S023,Grace,Lee,2012-01-20,Westlake Academy,G004,Speed Racers X,Racing,T013,Wellington,2026,98
+S008,Noah,Smith,2010-02-12,Southern Tech School,G003,Legends Clash,MOBA,T009,Christchurch,2026,60
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,480
+S026,Isla,Brown,2008-01-27,Northside Secondary,G008,Ultimate Football Pro,Sports,T002,Auckland,2026,867
+S013,Ethan,Taylor,2012-04-23,Westlake Academy,G003,Legends Clash,MOBA,T006,Dunedin,2024,284
+S022,Jack,Lee,2009-11-21,Auckland Central College,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,550
+S008,Noah,Smith,2010-02-12,Southern Tech School,G007,Galaxy Fighters,Fighting,T002,Auckland,2026,417
+S033,Mia,Lee,2011-11-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T002,Auckland,2026,250
+S017,Jack,Walker,2010-06-08,Westlake Academy,G002,Rocket Arena,Sports,T012,Wellington,2026,173
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G003,Legends Clash,MOBA,T004,Christchurch,2026,134
+S056,Noah,Wilson,2009-11-27,Westlake Academy,G002,Rocket Arena,Sports,T007,Hamilton,2025,887
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G008,Ultimate Football Pro,Sports,T015,Dunedin,2025,797
+S028,Ethan,Chen,2011-08-01,Harbour View High,G008,Ultimate Football Pro,Sports,T012,Wellington,2026,91
+S027,Ruby,Scott,2010-12-25,Auckland Central College,G001,Valor Strike,FPS,T002,Auckland,2026,356
+S033,Mia,Lee,2011-11-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T007,Hamilton,2025,903
+S055,Isla,Brown,2011-01-22,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T006,Dunedin,2024,407
+S005,Jack,Taylor,2009-11-21,Harbour View High,G006,Fantasy Kingdoms,Strategy,T010,Dunedin,2025,239
+S008,Noah,Smith,2010-02-12,Southern Tech School,G001,Valor Strike,FPS,T008,Hamilton,2024,451
+S033,Mia,Lee,2011-11-03,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T001,Dunedin,2024,895
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G005,Battle Zone Elite,FPS,T006,Dunedin,2024,769
+S019,Ruby,Smith,2010-02-06,Harbour View High,G003,Legends Clash,MOBA,T006,Dunedin,2024,669
+S031,Ava,Singh,2008-03-31,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,597
+S049,Amelia,Smith,2010-03-02,Harbour View High,G001,Valor Strike,FPS,T010,Dunedin,2025,532
+S054,Charlotte,Perera,2008-10-08,Auckland Central College,G003,Legends Clash,MOBA,T004,Christchurch,2026,388
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,276
+S055,Isla,Brown,2011-01-22,Westlake Academy,G005,Battle Zone Elite,FPS,T015,Dunedin,2025,845
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G004,Speed Racers X,Racing,T008,Hamilton,2024,543
+S051,Grace,Wilson,2012-11-18,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T008,Hamilton,2024,691
+S029,Daniel,Singh,2011-01-19,Harbour View High,G008,Ultimate Football Pro,Sports,T013,Wellington,2026,981
+S018,Daniel,Perera,2012-09-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,985
+S019,Ruby,Smith,2010-02-06,Harbour View High,G002,Rocket Arena,Sports,T011,Christchurch,2025,453
+S056,Noah,Wilson,2009-11-27,Westlake Academy,G008,Ultimate Football Pro,Sports,T002,Auckland,2026,978
+S056,Noah,Wilson,2009-11-27,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T007,Hamilton,2025,629
+S037,Jack,Lee,2012-06-17,Auckland Central College,G003,Legends Clash,MOBA,T004,Christchurch,2026,842
+S004,Liam,Singh,2009-11-28,Harbour View High,G003,Legends Clash,MOBA,T012,Wellington,2026,476
+S051,Grace,Wilson,2012-11-18,Northside Secondary,G008,Ultimate Football Pro,Sports,T011,Christchurch,2025,674
+S018,Daniel,Perera,2012-09-03,Northside Secondary,G004,Speed Racers X,Racing,T013,Wellington,2026,347
+S012,Daniel,King,2009-06-27,Auckland Central College,G004,Speed Racers X,Racing,T015,Dunedin,2025,764
+S027,Ruby,Scott,2010-12-25,Auckland Central College,G002,Rocket Arena,Sports,T010,Dunedin,2025,444
+S036,Amelia,Roberts,2008-06-18,Auckland Central College,G002,Rocket Arena,Sports,T006,Dunedin,2024,526
+S045,Olivia,Roberts,2009-09-19,Southern Tech School,G003,Legends Clash,MOBA,T003,Christchurch,2024,402
+S045,Olivia,Roberts,2009-09-19,Southern Tech School,G003,Legends Clash,MOBA,T003,Christchurch,2024,867
+S020,Noah,Roberts,2012-01-26,Northside Secondary,G007,Galaxy Fighters,Fighting,T003,Christchurch,2024,214
+S030,Grace,Lee,2011-01-03,Northside Secondary,G005,Battle Zone Elite,FPS,T010,Dunedin,2025,287
+S040,Amelia,Taylor,2009-11-16,Auckland Central College,G004,Speed Racers X,Racing,T005,Dunedin,2024,245
+S038,Leo,Smith,2011-01-24,Southern Tech School,G001,Valor Strike,FPS,T013,Wellington,2026,938
+S020,Noah,Roberts,2012-01-26,Northside Secondary,G004,Speed Racers X,Racing,T010,Dunedin,2025,508
+S002,Emma,King,2009-06-29,Auckland Central College,G003,Legends Clash,MOBA,T003,Christchurch,2024,840
+S022,Jack,Lee,2009-11-21,Auckland Central College,G003,Legends Clash,MOBA,T006,Dunedin,2024,90
+S007,Noah,Roberts,2012-05-03,Westlake Academy,G004,Speed Racers X,Racing,T001,Dunedin,2024,405
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G002,Rocket Arena,Sports,T003,Christchurch,2024,984
+S030,Grace,Lee,2011-01-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T003,Christchurch,2024,146
+S036,Amelia,Roberts,2008-06-18,Auckland Central College,G001,Valor Strike,FPS,T010,Dunedin,2025,722
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G002,Rocket Arena,Sports,T007,Hamilton,2025,962
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G004,Speed Racers X,Racing,T011,Christchurch,2025,364
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G008,Ultimate Football Pro,Sports,T013,Wellington,2026,180
+S038,Leo,Smith,2011-01-24,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T012,Wellington,2026,459
+S002,Emma,King,2009-06-29,Auckland Central College,G008,Ultimate Football Pro,Sports,T005,Dunedin,2024,493
+S028,Ethan,Chen,2011-08-01,Harbour View High,G003,Legends Clash,MOBA,T015,Dunedin,2025,633
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G004,Speed Racers X,Racing,T004,Christchurch,2026,356
+S048,Mason,Young,2011-07-13,Westlake Academy,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,199
+S044,Ruby,Lee,2012-04-01,Westlake Academy,G004,Speed Racers X,Racing,T003,Christchurch,2024,592
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G004,Speed Racers X,Racing,T008,Hamilton,2024,967
+S048,Mason,Young,2011-07-13,Westlake Academy,G002,Rocket Arena,Sports,T002,Auckland,2026,359
+S041,Mason,Roberts,2011-08-01,Northside Secondary,G003,Legends Clash,MOBA,T012,Wellington,2026,66
+S032,Ava,Wilson,2009-01-30,Southern Tech School,G007,Galaxy Fighters,Fighting,T004,Christchurch,2026,615
+S041,Mason,Roberts,2011-08-01,Northside Secondary,G004,Speed Racers X,Racing,T013,Wellington,2026,685
+S028,Ethan,Chen,2011-08-01,Harbour View High,G002,Rocket Arena,Sports,T013,Wellington,2026,324
+S017,Jack,Walker,2010-06-08,Westlake Academy,G005,Battle Zone Elite,FPS,T005,Dunedin,2024,291
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G004,Speed Racers X,Racing,T004,Christchurch,2026,59
+S043,Noah,King,2012-03-03,Auckland Central College,G002,Rocket Arena,Sports,T007,Hamilton,2025,575
+S020,Noah,Roberts,2012-01-26,Northside Secondary,G008,Ultimate Football Pro,Sports,T002,Auckland,2026,239
+S030,Grace,Lee,2011-01-03,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T009,Christchurch,2026,123
+S028,Ethan,Chen,2011-08-01,Harbour View High,G005,Battle Zone Elite,FPS,T002,Auckland,2026,828
+S029,Daniel,Singh,2011-01-19,Harbour View High,G001,Valor Strike,FPS,T003,Christchurch,2024,321
+S022,Jack,Lee,2009-11-21,Auckland Central College,G003,Legends Clash,MOBA,T008,Hamilton,2024,881
+S048,Mason,Young,2011-07-13,Westlake Academy,G008,Ultimate Football Pro,Sports,T014,Auckland,2026,359
+S008,Noah,Smith,2010-02-12,Southern Tech School,G008,Ultimate Football Pro,Sports,T008,Hamilton,2024,409
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G002,Rocket Arena,Sports,T004,Christchurch,2026,417
+S060,Ava,Brown,2012-04-01,Southern Tech School,G005,Battle Zone Elite,FPS,T005,Dunedin,2024,637
+S034,Emma,Fernando,2008-01-01,Auckland Central College,G002,Rocket Arena,Sports,T002,Auckland,2026,59
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G006,Fantasy Kingdoms,Strategy,T006,Dunedin,2024,903
+S029,Daniel,Singh,2011-01-19,Harbour View High,G008,Ultimate Football Pro,Sports,T007,Hamilton,2025,204
+S012,Daniel,King,2009-06-27,Auckland Central College,G004,Speed Racers X,Racing,T003,Christchurch,2024,714
+S044,Ruby,Lee,2012-04-01,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T004,Christchurch,2026,788
+S029,Daniel,Singh,2011-01-19,Harbour View High,G003,Legends Clash,MOBA,T014,Auckland,2026,846
+S044,Ruby,Lee,2012-04-01,Westlake Academy,G004,Speed Racers X,Racing,T012,Wellington,2026,875
+S028,Ethan,Chen,2011-08-01,Harbour View High,G006,Fantasy Kingdoms,Strategy,T007,Hamilton,2025,214
+S017,Jack,Walker,2010-06-08,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T014,Auckland,2026,951
+S050,Ava,Taylor,2010-07-20,Northside Secondary,G007,Galaxy Fighters,Fighting,T009,Christchurch,2026,769
+S028,Ethan,Chen,2011-08-01,Harbour View High,G001,Valor Strike,FPS,T012,Wellington,2026,993
+S015,Ruby,Fernando,2011-08-01,Southern Tech School,G008,Ultimate Football Pro,Sports,T004,Christchurch,2026,740
+S039,Daniel,Smith,2009-06-21,Westlake Academy,G004,Speed Racers X,Racing,T003,Christchurch,2024,663
+S023,Grace,Lee,2012-01-20,Westlake Academy,G008,Ultimate Football Pro,Sports,T013,Wellington,2026,780
+S040,Amelia,Taylor,2009-11-16,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T012,Wellington,2026,53
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G008,Ultimate Football Pro,Sports,T006,Dunedin,2024,515
+S043,Noah,King,2012-03-03,Auckland Central College,G001,Valor Strike,FPS,T004,Christchurch,2026,73
+S017,Jack,Walker,2010-06-08,Westlake Academy,G003,Legends Clash,MOBA,T013,Wellington,2026,327
+S012,Daniel,King,2009-06-27,Auckland Central College,G008,Ultimate Football Pro,Sports,T003,Christchurch,2024,735
+S050,Ava,Taylor,2010-07-20,Northside Secondary,G003,Legends Clash,MOBA,T004,Christchurch,2026,593
+S009,Grace,Patel,2012-02-08,Auckland Central College,G003,Legends Clash,MOBA,T011,Christchurch,2025,333
+S051,Grace,Wilson,2012-11-18,Northside Secondary,G007,Galaxy Fighters,Fighting,T009,Christchurch,2026,535
+S004,Liam,Singh,2009-11-28,Harbour View High,G007,Galaxy Fighters,Fighting,T010,Dunedin,2025,479
+S017,Jack,Walker,2010-06-08,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T013,Wellington,2026,188
+S005,Jack,Taylor,2009-11-21,Harbour View High,G004,Speed Racers X,Racing,T012,Wellington,2026,837
+S029,Daniel,Singh,2011-01-19,Harbour View High,G005,Battle Zone Elite,FPS,T015,Dunedin,2025,144
+S059,Sophia,Perera,2008-06-13,Harbour View High,G006,Fantasy Kingdoms,Strategy,T003,Christchurch,2024,477
+S018,Daniel,Perera,2012-09-03,Northside Secondary,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,811
+S031,Ava,Singh,2008-03-31,Northside Secondary,G001,Valor Strike,FPS,T001,Dunedin,2024,294
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G008,Ultimate Football Pro,Sports,T013,Wellington,2026,488
+S015,Ruby,Fernando,2011-08-01,Southern Tech School,G002,Rocket Arena,Sports,T009,Christchurch,2026,556
+S003,Jack,Perera,2010-02-15,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T014,Auckland,2026,184
+S013,Ethan,Taylor,2012-04-23,Westlake Academy,G004,Speed Racers X,Racing,T001,Dunedin,2024,755
+S005,Jack,Taylor,2009-11-21,Harbour View High,G002,Rocket Arena,Sports,T009,Christchurch,2026,600
+S033,Mia,Lee,2011-11-03,Northside Secondary,G008,Ultimate Football Pro,Sports,T009,Christchurch,2026,691
+S032,Ava,Wilson,2009-01-30,Southern Tech School,G005,Battle Zone Elite,FPS,T011,Christchurch,2025,246
+S021,Mia,Singh,2011-09-09,Southern Tech School,G007,Galaxy Fighters,Fighting,T013,Wellington,2026,692
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G004,Speed Racers X,Racing,T009,Christchurch,2026,687
+S014,Daniel,Brown,2012-06-29,Westlake Academy,G004,Speed Racers X,Racing,T001,Dunedin,2024,729
+S044,Ruby,Lee,2012-04-01,Westlake Academy,G004,Speed Racers X,Racing,T011,Christchurch,2025,935
+S020,Noah,Roberts,2012-01-26,Northside Secondary,G005,Battle Zone Elite,FPS,T014,Auckland,2026,531
+S019,Ruby,Smith,2010-02-06,Harbour View High,G003,Legends Clash,MOBA,T009,Christchurch,2026,888
+S026,Isla,Brown,2008-01-27,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T003,Christchurch,2024,303
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G002,Rocket Arena,Sports,T006,Dunedin,2024,699
+S015,Ruby,Fernando,2011-08-01,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T002,Auckland,2026,681
+S029,Daniel,Singh,2011-01-19,Harbour View High,G001,Valor Strike,FPS,T012,Wellington,2026,819
+S002,Emma,King,2009-06-29,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T010,Dunedin,2025,826
+S055,Isla,Brown,2011-01-22,Westlake Academy,G001,Valor Strike,FPS,T011,Christchurch,2025,688
+S026,Isla,Brown,2008-01-27,Northside Secondary,G006,Fantasy Kingdoms,Strategy,T011,Christchurch,2025,158
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G004,Speed Racers X,Racing,T014,Auckland,2026,836
+S056,Noah,Wilson,2009-11-27,Westlake Academy,G005,Battle Zone Elite,FPS,T011,Christchurch,2025,471
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G008,Ultimate Football Pro,Sports,T010,Dunedin,2025,690
+S020,Noah,Roberts,2012-01-26,Northside Secondary,G004,Speed Racers X,Racing,T010,Dunedin,2025,388
+S019,Ruby,Smith,2010-02-06,Harbour View High,G008,Ultimate Football Pro,Sports,T010,Dunedin,2025,768
+S050,Ava,Taylor,2010-07-20,Northside Secondary,G005,Battle Zone Elite,FPS,T015,Dunedin,2025,691
+S032,Ava,Wilson,2009-01-30,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T009,Christchurch,2026,648
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G003,Legends Clash,MOBA,T008,Hamilton,2024,558
+S034,Emma,Fernando,2008-01-01,Auckland Central College,G002,Rocket Arena,Sports,T011,Christchurch,2025,186
+S010,Olivia,Singh,2008-07-08,Auckland Central College,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,100
+S043,Noah,King,2012-03-03,Auckland Central College,G006,Fantasy Kingdoms,Strategy,T007,Hamilton,2025,746
+S032,Ava,Wilson,2009-01-30,Southern Tech School,G004,Speed Racers X,Racing,T004,Christchurch,2026,386
+S002,Emma,King,2009-06-29,Auckland Central College,G004,Speed Racers X,Racing,T011,Christchurch,2025,283
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G003,Legends Clash,MOBA,T005,Dunedin,2024,303
+S028,Ethan,Chen,2011-08-01,Harbour View High,G003,Legends Clash,MOBA,T015,Dunedin,2025,646
+S033,Mia,Lee,2011-11-03,Northside Secondary,G007,Galaxy Fighters,Fighting,T007,Hamilton,2025,816
+S013,Ethan,Taylor,2012-04-23,Westlake Academy,G001,Valor Strike,FPS,T002,Auckland,2026,806
+S041,Mason,Roberts,2011-08-01,Northside Secondary,G004,Speed Racers X,Racing,T015,Dunedin,2025,734
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G004,Speed Racers X,Racing,T001,Dunedin,2024,933
+S032,Ava,Wilson,2009-01-30,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T006,Dunedin,2024,258
+S044,Ruby,Lee,2012-04-01,Westlake Academy,G007,Galaxy Fighters,Fighting,T007,Hamilton,2025,625
+S059,Sophia,Perera,2008-06-13,Harbour View High,G002,Rocket Arena,Sports,T009,Christchurch,2026,368
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G007,Galaxy Fighters,Fighting,T012,Wellington,2026,235
+S054,Charlotte,Perera,2008-10-08,Auckland Central College,G007,Galaxy Fighters,Fighting,T003,Christchurch,2024,385
+S015,Ruby,Fernando,2011-08-01,Southern Tech School,G006,Fantasy Kingdoms,Strategy,T009,Christchurch,2026,791
+S038,Leo,Smith,2011-01-24,Southern Tech School,G001,Valor Strike,FPS,T003,Christchurch,2024,827
+S028,Ethan,Chen,2011-08-01,Harbour View High,G006,Fantasy Kingdoms,Strategy,T013,Wellington,2026,519
+S051,Grace,Wilson,2012-11-18,Northside Secondary,G002,Rocket Arena,Sports,T001,Dunedin,2024,559
+S002,Emma,King,2009-06-29,Auckland Central College,G001,Valor Strike,FPS,T007,Hamilton,2025,114
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G002,Rocket Arena,Sports,T003,Christchurch,2024,393
+S042,Olivia,Taylor,2008-05-11,Harbour View High,G004,Speed Racers X,Racing,T015,Dunedin,2025,311
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G004,Speed Racers X,Racing,T013,Wellington,2026,302
+S029,Daniel,Singh,2011-01-19,Harbour View High,G001,Valor Strike,FPS,T001,Dunedin,2024,121
+S033,Mia,Lee,2011-11-03,Northside Secondary,G004,Speed Racers X,Racing,T008,Hamilton,2024,387
+S036,Amelia,Roberts,2008-06-18,Auckland Central College,G003,Legends Clash,MOBA,T012,Wellington,2026,218
+S048,Mason,Young,2011-07-13,Westlake Academy,G008,Ultimate Football Pro,Sports,T012,Wellington,2026,540
+S038,Leo,Smith,2011-01-24,Southern Tech School,G004,Speed Racers X,Racing,T002,Auckland,2026,482
+S007,Noah,Roberts,2012-05-03,Westlake Academy,G008,Ultimate Football Pro,Sports,T002,Auckland,2026,725
+S048,Mason,Young,2011-07-13,Westlake Academy,G006,Fantasy Kingdoms,Strategy,T014,Auckland,2026,940
+S043,Noah,King,2012-03-03,Auckland Central College,G002,Rocket Arena,Sports,T003,Christchurch,2024,987
+S029,Daniel,Singh,2011-01-19,Harbour View High,G004,Speed Racers X,Racing,T014,Auckland,2026,619
+S009,Grace,Patel,2012-02-08,Auckland Central College,G004,Speed Racers X,Racing,T004,Christchurch,2026,301
+S011,Amelia,Fernando,2009-08-20,Northside Secondary,G002,Rocket Arena,Sports,T014,Auckland,2026,322
+S050,Ava,Taylor,2010-07-20,Northside Secondary,G005,Battle Zone Elite,FPS,T002,Auckland,2026,297
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G001,Valor Strike,FPS,T011,Christchurch,2025,313
+S024,Charlotte,Smith,2012-05-13,Harbour View High,G006,Fantasy Kingdoms,Strategy,T015,Dunedin,2025,168
+S016,Leo,Roberts,2008-01-26,Westlake Academy,G005,Battle Zone Elite,FPS,T001,Dunedin,2024,872
+S005,Jack,Taylor,2009-11-21,Harbour View High,G005,Battle Zone Elite,FPS,T002,Auckland,2026,840
