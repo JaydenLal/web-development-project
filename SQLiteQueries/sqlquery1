@@ -1,0 +1,10 @@
+SELECT
+	s.first_name,
+	s.last_name,
+	g.game,
+	tm.score
+FROM Tournament_Matches tm
+JOIN Student s ON tm.student_id = s.student_id
+JOIN Game g ON tm.game_id;
+
+# Get the student scoreboard

@@ -1,0 +1,6 @@
+SELECT t.year, t.city, tm.game_id, tm.student_id, tm.score
+FROM tournament_matches tm
+JOIN tournament t ON tm.tournament_id = t.tournament_id
+ORDER BY t.year ASC, t.cixty ASC;
+
+# Sort by Tournament Chronologically

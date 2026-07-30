@@ -1,0 +1,29 @@
+WITH RankedPlayers AS (
+    SELECT 
+        g.game AS Game_Name,
+        g.genre AS Genre,
+        s.first_name || ' ' || s.last_name AS Student_Name,
+        s.school AS School,
+        COUNT(tm.tournament_id) AS Tournaments_Played,
+        SUM(tm.score) AS Total_Score,
+        -- Advanced feature: Ranks students within their specific game group based on total score
+        RANK() OVER (
+            PARTITION BY g.game_id 
+            ORDER BY SUM(tm.score) DESC
+        ) AS Game_Rank
+    FROM tournament_matches tm
+    JOIN student s ON tm.student_id = s.student_id
+    JOIN game g ON tm.game_id = g.game_id
+    GROUP BY g.game_id, s.student_id
+)
+SELECT 
+    Game_Name,
+    Genre,
+    Game_Rank,
+    Student_Name,
+    School,
+    Tournaments_Played,
+    Total_Score
+FROM RankedPlayers
+WHERE Game_Rank <= 3 -- Filters to only show the Top 3 players per game
+ORDER BY Game_Name ASC, Game_Rank ASC;
