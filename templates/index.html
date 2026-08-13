@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Database Dashboard</title>
-  <link rel="stylesheet" href="template/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -30,8 +30,7 @@
           <a href="#">Databases</a>
           <a href="#">Tables</a>
           <a href="#">Columns</a>
-          <a href="#">Search</a>
-          <a href="#">Settings</a>
+          <a href="#" id="nav-settings">Settings</a>
         </nav>
       </aside>
 
@@ -41,10 +40,12 @@
             <h2>Current Database</h2>
             <span class="pill">students.db</span>
           </div>
-          <div class="panel-actions">
-            <button class="primary-button">Add Record</button>
-            <button class="secondary-button">Save Changes</button>
-          </div>
+          <button class="icon-button" id="open-settings" aria-label="Open settings">⚙</button>
+        </div>
+
+        <div class="panel-actions">
+          <button class="primary-button">Add Record</button>
+          <button class="secondary-button">Save Changes</button>
         </div>
 
         <div class="table-card">
@@ -166,6 +167,31 @@
     </div>
   </div>
 
+  <div class="modal-backdrop hidden" id="settings-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div>
+          <p class="modal-eyebrow">Settings</p>
+          <h3 class="modal-title">Appearance</h3>
+        </div>
+        <button class="icon-button" id="close-settings" aria-label="Close settings">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="settings-row">
+          <span>Dark mode</span>
+          <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <span class="switch-track"></span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="ghost-button" id="cancel-settings">Close</button>
+        <button class="primary-button" id="save-settings">Save</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     const modal = document.getElementById('record-modal');
     const closeModal = document.getElementById('close-modal');
@@ -209,6 +235,41 @@
     confirmModal.addEventListener('click', closeModalWindow);
     modal.addEventListener('click', event => {
       if (event.target === modal) closeModalWindow();
+    });
+
+    const settingsModal = document.getElementById('settings-modal');
+    const openSettings = document.getElementById('open-settings');
+    const closeSettings = document.getElementById('close-settings');
+    const cancelSettings = document.getElementById('cancel-settings');
+    const saveSettings = document.getElementById('save-settings');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+    function openSettingsWindow() {
+      darkModeToggle.checked = document.body.classList.contains('dark-mode');
+      settingsModal.classList.remove('hidden');
+    }
+
+    function closeSettingsWindow() {
+      settingsModal.classList.add('hidden');
+    }
+
+    openSettings.addEventListener('click', openSettingsWindow);
+    closeSettings.addEventListener('click', closeSettingsWindow);
+    cancelSettings.addEventListener('click', closeSettingsWindow);
+    saveSettings.addEventListener('click', closeSettingsWindow);
+
+    darkModeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+    });
+
+    settingsModal.addEventListener('click', event => {
+      if (event.target === settingsModal) closeSettingsWindow();
+    });
+
+    const navSettings = document.getElementById('nav-settings');
+    navSettings.addEventListener('click', event => {
+      event.preventDefault();
+      openSettingsWindow();
     });
   </script>
 </body>
