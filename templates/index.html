@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Database Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
   <div class="app-shell">
@@ -62,47 +62,35 @@
 
           <div class="data-grid">
             <div class="table-section">
+              
+              <!-- Esports -->
               <div class="table-header-row">
-                <span>Name</span>
-                <span>Type</span>
-                <span>Status</span>
-                <span>Updated</span>
-                <span>Actions</span>
+                <span>Player</span>
+                <span>Game</span>
+                <span>School</span>
+                <span>Year</span>
+                <span>Score</span>
               </div>
-              <div class="table-row" data-name="users" data-status="active" data-updated="today" data-rows="128" data-key="id">
-                <span>users</span>
-                <span>table</span>
-                <span>active</span>
-                <span>today</span>
-                <button class="link-button">Edit</button>
+
+              <!-- Flask -->
+              {% for row in records %}
+              
+              <div class="table-row" 
+                   data-name="{{ row['first_name'] }}" 
+                   data-status="{{ row['school'] }}" 
+                   data-updated="{{ row['year'] }}" 
+                   data-rows="{{ row['score'] }}" 
+                   data-key="{{ row['game'] }}">
+                
+                <span>{{ row['first_name'] }}</span>
+                <span>{{ row['game'] }}</span>
+                <span>{{ row['school'] }}</span>
+                <span>{{ row['year'] }}</span>
+                <button class="link-button">View</button>
+                
               </div>
-              <div class="table-row" data-name="test" data-status="draft" data-updated="yesterday" data-rows="32" data-key="id">
-                <span>test</span>
-                <span>table</span>
-                <span>draft</span>
-                <span>yesterday</span>
-                <button class="link-button">Edit</button>
-              </div>
-              <div class="table-row" data-name="test2" data-status="active" data-updated="2d ago" data-rows="64" data-key="id">
-                <span>test2</span>
-                <span>table</span>
-                <span>active</span>
-                <span>2d ago</span>
-                <button class="link-button">Edit</button>
-              </div>
-              <div class="table-row" data-name="test3" data-status="draft" data-updated="last week" data-rows="12" data-key="id">
-                <span>test3</span>
-                <span>table</span>
-                <span>draft</span>
-                <span>last week</span>
-                <button class="link-button">Edit</button>
-              </div>
-              <div class="table-row" data-name="test4" data-status="active" data-updated="today" data-rows="8" data-key="id">
-                <span>test4</span>
-                <span>table</span>
-                <span>active</span>
-                <span>today</span>
-                <button class="link-button">Edit</button>
+              
+              {% endfor %}
               </div>
             </div>
           </div>
