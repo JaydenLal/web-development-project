@@ -40,6 +40,8 @@ a {
 
 /* Header section */
 .topbar {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +70,7 @@ a {
   margin: 16px 0 0;
 }
 
-/* Styling for search boxes */
+/* Styling for search box */
 .search-box input,
 .table-topbar input {
   width: 100%;
@@ -88,38 +90,15 @@ a {
   transition: transform 120ms ease, background-color 120ms ease, color 120ms ease, border-color 120ms ease;
 }
 
-/* main table area + sidebar */
+/* main table area */
 .content-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 2.1fr) 160px;
-  gap: clamp(18px, 2vw, 20px);
   margin-top: 18px;
 }
-.sidebar,
 .main-panel {
   background: #ffffff;
   border: 1px solid #d1d5db;
   border-radius: 16px;
   padding: clamp(20px, 1.5vw, 28px);
-}
-.sidebar {
-  min-width: 160px;
-}
-
-/* Sidebar menu styling */
-.nav-title {
-  margin: 0 0 16px;
-  font-size: 1rem;
-  font-weight: 700;
-}
-.sidebar nav a {
-  display: block;
-  color: #111827;
-  padding: 10px 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-.sidebar nav a:last-child {
-  border-bottom: none;
 }
 
 /* Header inside the main content */
@@ -174,14 +153,12 @@ body.dark-mode {
   color: #e5e7eb;
 }
 body.dark-mode .topbar,
-body.dark-mode .sidebar,
 body.dark-mode .main-panel,
 body.dark-mode .table-card,
 body.dark-mode .app-shell {
   background: transparent;
 }
 body.dark-mode .topbar-note,
-body.dark-mode .sidebar nav a,
 body.dark-mode .panel-title h2,
 body.dark-mode .search-box input,
 body.dark-mode .table-topbar input,
@@ -258,12 +235,7 @@ body.dark-mode .table-header-row {
   }
 
   .content-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .sidebar {
-    display: none;
+    margin-top: 12px;
   }
 
   .main-panel {
