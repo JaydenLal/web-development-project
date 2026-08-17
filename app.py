@@ -1,18 +1,23 @@
 from flask import Flask, render_template
 import sqlite3
 
+# Create the Flask app, This is the main web application
 app = Flask(__name__)
 
+# Connect to the SQLite database and return the connection.
+# We set row_factory so we can access columns by name like row['game']
 def get_db_connection():
     conn = sqlite3.connect('esports.db')
-    conn.row_factory = sqlite3.Row # This lets us call columns by name
+    conn.row_factory = sqlite3.Row
     return conn
 
+# This route handles the homepage and loads data to display on the page
 @app.route('/')
 def index():
     conn = get_db_connection()
-    
-    # SQL QUERY
+
+    # SQL query: get player names, game, school, year, and score
+    # from the related tables, sorted from highest score to lowest
     query = '''
         SELECT s.first_name, g.game, s.school, t.year, tm.score
         FROM tournament_matches tm
@@ -21,16 +26,18 @@ def index():
         JOIN tournament t ON tm.tournament_id = t.tournament_id
         ORDER BY tm.score DESC
     '''
-    
+
     records = conn.execute(query).fetchall()
     conn.close()
-    
+
+    # Send the data to the template so it can show rows in the HTML table
     return render_template('index.html', records=records)
 
-# error handler for 404 errors
+# If someone visits a page that does not exist, show the 404 page
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
 
+# Run the app when this file is executed directly
 if __name__ == '__main__':
     app.run(debug=True)

@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Database Dashboard</title>
+  <!-- Link css stylesheet -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
   <div class="app-shell">
+    <!-- Top header -->
     <header class="topbar">
       <div>
         <h1>SQLite Database Viewer</h1>
-        <p class="topbar-note">Single database preview for a student project</p>
+        <p class="topbar-note">Single database preview</p>
       </div>
       <div class="search-box">
         <label for="global-search" class="sr-only">Search</label>
@@ -19,6 +21,7 @@
       </div>
     </header>
 
+    <!-- Main content area -->
     <main class="content-grid">
       <section class="main-panel">
         <div class="panel-header">
@@ -28,7 +31,7 @@
           <button class="icon-button" id="open-settings" aria-label="Open settings">⚙</button>
         </div>
 
-
+        <!-- Data table, this is where the database rows are shown -->
         <div class="table-card">
           <div class="table-topbar">
             <input type="search" />
@@ -36,8 +39,7 @@
 
           <div class="data-grid">
             <div class="table-section">
-              
-              <!-- Esports -->
+              <!-- Table header, names of each column in the data view -->
               <div class="table-header-row">
                 <span>Player</span>
                 <span>Game</span>
@@ -46,30 +48,28 @@
                 <span>Score</span>
               </div>
 
-              <!-- Flask -->
+              <!-- Loop through every database record and show it as a row -->
               {% for row in records %}
-              
-              <div class="table-row" 
-                   data-name="{{ row['first_name'] }}" 
-                   data-status="{{ row['school'] }}" 
-                   data-updated="{{ row['year'] }}" 
-                   data-rows="{{ row['score'] }}" 
+              <div class="table-row"
+                   data-name="{{ row['first_name'] }}"
+                   data-status="{{ row['school'] }}"
+                   data-updated="{{ row['year'] }}"
+                   data-rows="{{ row['score'] }}"
                    data-key="{{ row['game'] }}">
-                
+
                 <span>{{ row['first_name'] }}</span>
                 <span>{{ row['game'] }}</span>
                 <span>{{ row['school'] }}</span>
                 <span>{{ row['year'] }}</span>
-                
+                <span>{{ row['score'] }}</span>
               </div>
-              
               {% endfor %}
-              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Sidebar navigation for the dashboard layout -->
       <aside class="sidebar">
         <nav>
           <p class="nav-title">Navigation</p>
@@ -81,6 +81,7 @@
       </aside>
     </main>
 
+    <!-- JavaScript to toggle dark mode -->
     <script>
       (function(){
         const btn = document.getElementById('open-settings');
