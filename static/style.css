@@ -6,6 +6,7 @@
   font-size: 16px;
   line-height: 1.5;
 }
+/* Keeps scaling consistent */
 * {
   box-sizing: border-box;
 }
@@ -46,7 +47,6 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: clamp(12px, 2vw, 18px);
   background: #ffffff;
   border: 1px solid #d1d5db;
   border-radius: 14px;
@@ -61,17 +61,12 @@ a {
   color: #4b5563;
   font-size: 0.9rem;
 }
-.search-box {
-  width: min(420px, 45vw);
-}
 .mobile-controls {
   display: none;
   gap: 12px;
   margin: 16px 0 0;
 }
 
-/* Styling for search box */
-.search-box input,
 .table-topbar input {
   width: 100%;
   border: 1px solid #d1d5db;
@@ -80,7 +75,6 @@ a {
   background: #ffffff;
   color: #111827;
 }
-.search-box input:focus,
 .table-topbar input:focus {
   outline: 2px solid #bfdbfe;
 }
@@ -144,73 +138,11 @@ a {
   color: #475569;
 }
 
-/* Dark mode style */
-:root {
-  color-scheme: light;
-}
-body.dark-mode {
-  background: #111827;
-  color: #e5e7eb;
-}
-body.dark-mode .topbar,
-body.dark-mode .main-panel,
-body.dark-mode .table-card,
-body.dark-mode .app-shell {
-  background: transparent;
-}
-body.dark-mode .topbar-note,
-body.dark-mode .panel-title h2,
-body.dark-mode .search-box input,
-body.dark-mode .table-topbar input,
-body.dark-mode .table-section,
-body.dark-mode .table-header-row,
-body.dark-mode .table-row,
-body.dark-mode .secondary-button,
-body.dark-mode .icon-button {
-  color: #f9fafb;
-}
-
-body.dark-mode .table-row span {
-  color: #dfe7f5;
-}
-
-body.dark-mode .icon-button {
-  background: #374151;
-}
-
 @media (max-width: 780px) {
   .panel-header {
     flex-direction: row;
     align-items: center;
   }
-}
-body.dark-mode .search-box input,
-body.dark-mode .table-topbar input {
-  background: #111827;
-  border-color: #374151;
-  color: #e5e7eb;
-}
-body.dark-mode .primary-button {
-  background: #2563eb;
-  color: #ffffff;
-}
-body.dark-mode .secondary-button {
-  background: #111827;
-  color: #e5e7eb;
-  border-color: #374151;
-}
-body.dark-mode .table-section {
-  background: #111827;
-}
-body.dark-mode .table-row {
-  border-color: #374151;
-}
-body.dark-mode .table-row:hover {
-  background: #111827;
-}
-body.dark-mode .table-header-row {
-  color: #e5e7eb;
-  border-color: #374151;
 }
 
 /* layout scaling for phone screens */
@@ -228,10 +160,6 @@ body.dark-mode .table-header-row {
   .topbar h1 {
     font-size: 1.1rem;
     text-align: center;
-  }
-
-  .search-box {
-    width: 100%;
   }
 
   .content-grid {
