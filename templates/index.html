@@ -15,49 +15,23 @@
       </div>
       <div class="search-box">
         <label for="global-search" class="sr-only">Search</label>
-        <input id="global-search" type="search" placeholder="Search rows..." />
+        <input id="global-search" type="search" />
       </div>
     </header>
-    <div class="mobile-controls">
-      <button class="ghost-pill">Databases ▼</button>
-      <button class="ghost-pill">Sort ▼</button>
-    </div>
 
     <main class="content-grid">
-      <aside class="sidebar">
-        <nav>
-          <p class="nav-title">Navigation</p>
-          <a href="#">Databases</a>
-          <a href="#">Tables</a>
-          <a href="#">Columns</a>
-          <a href="#" id="nav-settings">Settings</a>
-        </nav>
-      </aside>
-
       <section class="main-panel">
         <div class="panel-header">
           <div class="panel-title">
             <h2>Current Database</h2>
-            <span class="pill">students.db</span>
           </div>
           <button class="icon-button" id="open-settings" aria-label="Open settings">⚙</button>
         </div>
 
-        <div class="panel-actions">
-          <button class="primary-button">Add Record</button>
-          <button class="secondary-button">Save Changes</button>
-        </div>
 
         <div class="table-card">
           <div class="table-topbar">
-            <input type="search" placeholder="Search tables" />
-            <div class="quick-buttons">
-              <button class="ghost-pill">Table</button>
-              <button class="ghost-pill">Rows</button>
-              <button class="ghost-pill">Columns</button>
-              <button class="ghost-pill">Sort</button>
-              <button class="ghost-pill">Filter</button>
-            </div>
+            <input type="search" />
           </div>
 
           <div class="data-grid">
@@ -86,7 +60,6 @@
                 <span>{{ row['game'] }}</span>
                 <span>{{ row['school'] }}</span>
                 <span>{{ row['year'] }}</span>
-                <button class="link-button">View</button>
                 
               </div>
               
@@ -96,169 +69,27 @@
           </div>
         </div>
       </section>
-      <aside class="details-panel">
-        <div class="details-card">
-          <div class="tabs-row">
-            <button class="tab active">Columns</button>
-            <button class="tab">Relationships</button>
-            <button class="tab">Indexes</button>
-          </div>
-          <div class="column-list">
-            <div><strong>id</strong> <span>integer</span> <em>PK</em></div>
-            <div><strong>name</strong> <span>text</span> <em>required</em></div>
-            <div><strong>status</strong> <span>enum</span> <em>active / draft / archived</em></div>
-            <div><strong>updated_at</strong> <span>date</span></div>
-            <div><strong>owner_id</strong> <span>integer</span></div>
-          </div>
-        </div>
+
+      <aside class="sidebar">
+        <nav>
+          <p class="nav-title">Navigation</p>
+          <a href="#">Databases</a>
+          <a href="#">Tables</a>
+          <a href="#">Columns</a>
+          <a href="#" id="nav-settings" aria-label="Toggle dark mode">Dark mode</a>
+        </nav>
       </aside>
     </main>
 
-    <section class="mobile-details-card">
-      <div class="details-card">
-        <div class="tabs-row">
-          <button class="tab active">Columns</button>
-          <button class="tab">Relationships</button>
-          <button class="tab">Indexes</button>
-        </div>
-        <div class="column-list">
-          <div><strong>id</strong> <span>integer</span> <em>PK</em></div>
-          <div><strong>name</strong> <span>text</span> <em>required</em></div>
-          <div><strong>status</strong> <span>enum</span> <em>active / draft / archived</em></div>
-          <div><strong>updated_at</strong> <span>date</span></div>
-          <div><strong>owner_id</strong> <span>integer</span></div>
-        </div>
-      </div>
-    </section>
+    <script>
+      (function(){
+        const btn = document.getElementById('open-settings');
+        const nav = document.getElementById('nav-settings');
+        function toggle() { document.body.classList.toggle('dark-mode'); }
+        if (btn) btn.addEventListener('click', toggle);
+        if (nav) nav.addEventListener('click', (e) => { e.preventDefault(); toggle(); });
+      })();
+    </script>
   </div>
-
-  <div class="modal-backdrop hidden" id="record-modal">
-    <div class="modal-window">
-      <div class="modal-header">
-        <div>
-          <p class="modal-eyebrow">Record details</p>
-          <h3 class="modal-title">users</h3>
-        </div>
-        <button class="icon-button" id="close-modal" aria-label="Close window">×</button>
-      </div>
-      <div class="modal-body">
-        <div class="record-row"><span>Table</span><strong id="modal-table">users</strong></div>
-        <div class="record-row"><span>Rows</span><strong id="modal-rows">128</strong></div>
-        <div class="record-row"><span>Status</span><strong id="modal-status">active</strong></div>
-        <div class="record-row"><span>Primary key</span><strong id="modal-key">id</strong></div>
-        <div class="record-row"><span>Updated</span><strong id="modal-updated">today</strong></div>
-      </div>
-      <div class="modal-actions">
-        <button class="ghost-button" id="cancel-modal">Close</button>
-        <button class="primary-button" id="confirm-modal">Confirm</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop hidden" id="settings-modal">
-    <div class="modal-window">
-      <div class="modal-header">
-        <div>
-          <p class="modal-eyebrow">Settings</p>
-          <h3 class="modal-title">Appearance</h3>
-        </div>
-        <button class="icon-button" id="close-settings" aria-label="Close settings">×</button>
-      </div>
-      <div class="modal-body">
-        <div class="settings-row">
-          <span>Dark mode</span>
-          <label class="switch">
-            <input type="checkbox" id="dark-mode-toggle" />
-            <span class="switch-track"></span>
-          </label>
-        </div>
-      </div>
-      <div class="modal-actions">
-        <button class="ghost-button" id="cancel-settings">Close</button>
-        <button class="primary-button" id="save-settings">Save</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const modal = document.getElementById('record-modal');
-    const closeModal = document.getElementById('close-modal');
-    const cancelModal = document.getElementById('cancel-modal');
-    const confirmModal = document.getElementById('confirm-modal');
-    const rows = document.querySelectorAll('.table-row');
-    const modalFields = {
-      table: document.getElementById('modal-table'),
-      rows: document.getElementById('modal-rows'),
-      status: document.getElementById('modal-status'),
-      key: document.getElementById('modal-key'),
-      updated: document.getElementById('modal-updated'),
-      title: document.querySelector('.modal-title')
-    };
-
-    function openModal(row) {
-      modalFields.title.textContent = row.dataset.name;
-      modalFields.table.textContent = row.dataset.name;
-      modalFields.rows.textContent = row.dataset.rows;
-      modalFields.status.textContent = row.dataset.status;
-      modalFields.key.textContent = row.dataset.key;
-      modalFields.updated.textContent = row.dataset.updated;
-      modal.classList.remove('hidden');
-    }
-
-    function closeModalWindow() {
-      modal.classList.add('hidden');
-    }
-
-    rows.forEach(row => {
-      const button = row.querySelector('button');
-      if (button) {
-        button.addEventListener('click', event => {
-          event.stopPropagation();
-          openModal(row);
-        });
-      }
-    });
-    closeModal.addEventListener('click', closeModalWindow);
-    cancelModal.addEventListener('click', closeModalWindow);
-    confirmModal.addEventListener('click', closeModalWindow);
-    modal.addEventListener('click', event => {
-      if (event.target === modal) closeModalWindow();
-    });
-
-    const settingsModal = document.getElementById('settings-modal');
-    const openSettings = document.getElementById('open-settings');
-    const closeSettings = document.getElementById('close-settings');
-    const cancelSettings = document.getElementById('cancel-settings');
-    const saveSettings = document.getElementById('save-settings');
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-
-    function openSettingsWindow() {
-      darkModeToggle.checked = document.body.classList.contains('dark-mode');
-      settingsModal.classList.remove('hidden');
-    }
-
-    function closeSettingsWindow() {
-      settingsModal.classList.add('hidden');
-    }
-
-    openSettings.addEventListener('click', openSettingsWindow);
-    closeSettings.addEventListener('click', closeSettingsWindow);
-    cancelSettings.addEventListener('click', closeSettingsWindow);
-    saveSettings.addEventListener('click', closeSettingsWindow);
-
-    darkModeToggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark-mode', darkModeToggle.checked);
-    });
-
-    settingsModal.addEventListener('click', event => {
-      if (event.target === settingsModal) closeSettingsWindow();
-    });
-
-    const navSettings = document.getElementById('nav-settings');
-    navSettings.addEventListener('click', event => {
-      event.preventDefault();
-      openSettingsWindow();
-    });
-  </script>
 </body>
 </html>
