@@ -1,28 +1,17 @@
 /* Basic page styling for webpage */
 :root {
-  --bg: #f7f8fb;
-  --panel: #ffffff;
-  --border: #d1d5db;
-  --text: #1f2937;
-  --muted: #4b5563;
-  --row: #475569;
-  --line: #e5e7eb;
-  --focus: #bfdbfe;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 16px;
+  color: #1f2937;
   line-height: 1.5;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f8fb;
 }
 
 /* Keeps scaling consistent */
 * { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: var(--bg);
-}
 
 /* Main layout container */
 .app-shell {
@@ -40,36 +29,33 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: var(--panel);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #d1d5db;
   border-radius: 14px;
   padding: clamp(14px, 1.5vw, 20px);
 }
-.topbar h1 { 
-  margin: 0; font-size: 1.25rem; 
-}
+.topbar h1 { margin: 0; font-size: 1.25rem; }
 .dropdown {
-  background: var(--panel);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #d1d5db;
   border-radius: 10px;
   padding: 8px 12px;
-  color: var(--text);
+  color: #1f2937;
 }
-
 .table-topbar input {
   width: 100%;
-  border: 1px solid var(--border);
+  border: 1px solid #d1d5db;
   border-radius: 12px;
   padding: 12px 14px;
-  background: var(--panel);
+  background: #ffffff;
   color: #111827;
 }
 
 /* main table area */
 .content-grid { margin-top: 18px; }
 .main-panel {
-  background: var(--panel);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #d1d5db;
   border-radius: 16px;
   padding: clamp(20px, 1.5vw, 28px);
 }
@@ -97,14 +83,14 @@ body {
 .table-header-row {
   color: #334155;
   font-weight: 700;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #e5e7eb;
 }
 .table-row {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #e5e7eb;
   cursor: pointer;
 }
 .table-row:last-child { border-bottom: none; }
-.table-row span { color: var(--row); }
+.table-row span { color: #475569; }
 
 /* layout scaling for phone screens */
 @media (max-width: 780px) {
