@@ -42,6 +42,15 @@ body {
   padding: 8px 12px;
   color: #1f2937;
 }
+.topbar a.about {
+  font-family: Arial;
+  color: #111827;
+  text-decoration: underline;
+  font-size: 1rem;
+  padding: 6px 8px;
+}
+.topbar a.about:hover { color: #2563eb; }
+
 .table-topbar input {
   width: 100%;
   border: 1px solid #d1d5db;

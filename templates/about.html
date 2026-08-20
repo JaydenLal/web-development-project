@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database Dashboard</title>
+  <!-- Link css stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top header -->
+    <header class="topbar">
+      <div>
+        <h1>SQLite Database Viewer</h1>
+      </div>
+
+      <div class="topbar-nav">
+        <a href="/about" class="about">About</a>
+        <select class="dropdown" onchange="location = this.value;">
+          <option value="">Player score sorted highest to lowest</option>
+          <option value="/index2">Player score sorted lowest to highest</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <main class="content-grid">
+      <section class="main-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <h2>About This Site</h2>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-topbar">
+            <!-- Description -->
+            <p>
+              This website is a simple SQLite database viewer for esports tournament
+              results. It shows player names, the game they played, their school,
+              the tournament year, and the player's score. Use the menu at the top
+              to change the sort order and use the search box on the table section to
+              find a player's name.
+            </p>
+
+            <p>
+              How to use:
+              <ul>
+                <li>Go to the Home page to see the data sorted from highest to lowest.</li>
+                <li>Use the dropdown on the top-right to switch sorting order.</li>
+                <li>Type a name into the search box and press <strong>Search</strong> to filter results.</li>
+                <li>Clear the search box and press <strong>Search</strong> to see all records again.</li>
+              </ul>
+            </p>
+
+            <!-- image -->
+            <div style="margin-top:18px;text-align:center;">
+              <img src="{{ url_for('static', filename='placeholder.png') }}" alt="Placeholder image" style="max-width:300px;width:100%;height:auto;" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
