@@ -35,7 +35,11 @@
         <!-- Data table, this is where the database rows are shown -->
         <div class="table-card">
           <div class="table-topbar">
-            <input type="search" />
+            <!-- Search form for index2 -->
+            <form method="get" action="/index2">
+              <input name="q" type="search" placeholder="search..." value="{{ q }}" />
+              <button type="submit">Search</button>
+            </form>
           </div>
 
           <div class="data-grid">

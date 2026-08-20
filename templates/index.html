@@ -35,7 +35,12 @@
         <!-- Data table, this is where the database rows are shown -->
         <div class="table-card">
           <div class="table-topbar">
-            <input type="search" />
+            <!-- Server-side search form (no JavaScript). Uses GET so the
+                 search term appears in the URL like /?q=Ruby -->
+            <form method="get" action="/">
+              <input name="q" type="search" placeholder="search..." value="{{ q }}" />
+              <button type="submit">Search</button>
+            </form>
           </div>
 
           <div class="data-grid">
