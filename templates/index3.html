@@ -18,7 +18,7 @@
       <div class="topbar-nav">
         <a href="/about" class="about">About</a>
         <select class="dropdown" onchange="location = this.value;">
-          <option value="">Player score sorted highest to lowest</option>
+          <option value="/">Player score sorted highest to lowest</option>
           <option value="/index2">Player score sorted lowest to highest</option>
           <option value="/index3">Tournaments sorted chronologically</option>
         </select>
@@ -30,16 +30,15 @@
       <section class="main-panel">
         <div class="panel-header">
           <div class="panel-title">
-            <h2>Current Database > Player score sorted highest to lowest</h2>
+            <h2>Current Database > Tournaments sorted chronologically</h2>
           </div>
         </div>
 
         <!-- Data table, this is where the database rows are shown -->
         <div class="table-card">
           <div class="table-topbar">
-            <!-- Server-side search form (no JavaScript). Uses GET so the
-                 search term appears in the URL like /?q=Ruby -->
-            <form method="get" action="/">
+            <!-- Search form for index3 -->
+            <form method="get" action="/index3">
               <input name="q" type="search" placeholder="search..." value="{{ q }}" />
               <button type="submit">Search</button>
             </form>
@@ -49,26 +48,30 @@
             <div class="table-section">
               <!-- Table header, names of each column in the data view -->
               <div class="table-header-row">
-                <span>Player</span>
-                <span>Game</span>
-                <span>School</span>
                 <span>Year</span>
+                <span>City</span>
+                <span>Game</span>
+                <span>Student</span>
+                <span>Game ID</span>
+                <span>Student ID</span>
                 <span>Score</span>
               </div>
 
               <!-- Loop through every database record and show it as a row -->
               {% for row in records %}
               <div class="table-row"
-                   data-name="{{ row['first_name'] }}"
-                   data-status="{{ row['school'] }}"
+                   data-name="{{ row['student_id'] }}"
+                   data-status="{{ row['city'] }}"
                    data-updated="{{ row['year'] }}"
                    data-rows="{{ row['score'] }}"
-                   data-key="{{ row['game'] }}">
+                   data-key="{{ row['game_id'] }}">
 
-                <span>{{ row['first_name'] }}</span>
-                <span>{{ row['game'] }}</span>
-                <span>{{ row['school'] }}</span>
                 <span>{{ row['year'] }}</span>
+                <span>{{ row['city'] }}</span>
+                <span>{{ row['game_name'] }}</span>
+                <span>{{ row['first_name'] }} {{ row['last_name'] }}</span>
+                <span>{{ row['game_id'] }}</span>
+                <span>{{ row['student_id'] }}</span>
                 <span>{{ row['score'] }}</span>
               </div>
               {% endfor %}

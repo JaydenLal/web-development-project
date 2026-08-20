@@ -72,6 +72,53 @@ def index2():
     conn.close()
     return render_template('index2.html', records=records, q=q)
 
+
+# This connects the database and loads the database to display on index3.html
+@app.route('/index3')
+def index3():
+    conn = get_db_connection()
+    # Read the search query from the URL, e.g. /index3?q=Ruby
+    q = request.args.get('q', '').strip()
+
+    # SQL query: list tournaments and their matches, sorted chronologically
+    # Join student and game so the search can match names, city, year, ids, and scores
+    query = '''
+        SELECT t.year,
+               t.city,
+               g.game AS game_name,
+               s.first_name,
+               s.last_name,
+               tm.game_id,
+               tm.student_id,
+               tm.score
+        FROM tournament_matches tm
+        JOIN tournament t ON tm.tournament_id = t.tournament_id
+        JOIN student s ON tm.student_id = s.student_id
+        JOIN game g ON tm.game_id = g.game_id
+    '''
+
+    params = ()
+    if q:
+        # match the search term against multiple text and numeric columns
+        q_like = f"%{q.lower()}%"
+        query += (
+            " WHERE LOWER(s.first_name) LIKE ?"
+            " OR LOWER(s.last_name) LIKE ?"
+            " OR LOWER(t.city) LIKE ?"
+            " OR LOWER(g.game) LIKE ?"
+            " OR CAST(tm.game_id AS TEXT) LIKE ?"
+            " OR CAST(tm.student_id AS TEXT) LIKE ?"
+            " OR CAST(tm.score AS TEXT) LIKE ?"
+            " OR CAST(t.year AS TEXT) LIKE ?"
+        )
+        params = (q_like, q_like, q_like, q_like, q_like, q_like, q_like, q_like)
+
+    query += " ORDER BY t.year ASC, t.city ASC"
+
+    records = conn.execute(query, params).fetchall()
+    conn.close()
+    return render_template('index3.html', records=records, q=q)
+
 # About page
 @app.route('/about')
 def about():
