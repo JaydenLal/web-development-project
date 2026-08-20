@@ -18,7 +18,7 @@
       <div class="topbar-nav">
         <a href="/about" class="about">About</a>
         <select class="dropdown" onchange="location = this.value;">
-          <option value="">Player score sorted highest to lowest</option>
+          <option value="/">Player score sorted highest to lowest</option>
           <option value="/index2">Player score sorted lowest to highest</option>
           <option value="/index3">Tournaments sorted chronologically</option>
           <option value="/index4">Game stats summary</option>
@@ -31,17 +31,16 @@
       <section class="main-panel">
         <div class="panel-header">
           <div class="panel-title">
-            <h2>Current Database > Player score sorted highest to lowest</h2>
+            <h2>Current Database > Game stats summary</h2>
           </div>
         </div>
 
         <!-- Data table, this is where the database rows are shown -->
         <div class="table-card">
           <div class="table-topbar">
-            <!-- Server-side search form (no JavaScript). Uses GET so the
-                 search term appears in the URL like /?q=Ruby -->
-            <form method="get" action="/">
-              <input name="q" type="search" placeholder="search..." value="{{ q }}" />
+            <!-- Search form for index4 (filter by game name) -->
+            <form method="get" action="/index4">
+              <input name="q" type="search" placeholder="search game..." value="{{ q }}" />
               <button type="submit">Search</button>
             </form>
           </div>
@@ -49,28 +48,18 @@
           <div class="data-grid">
             <div class="table-section">
               <!-- Table header, names of each column in the data view -->
-              <div class="table-header-row">
-                <span>Player</span>
-                <span>Game</span>
-                <span>School</span>
-                <span>Year</span>
-                <span>Score</span>
-              </div>
+                <div class="table-header-row">
+                  <span>Game</span>
+                  <span>Matches Played</span>
+                  <span>Average Score</span>
+                </div>
 
               <!-- Loop through every database record and show it as a row -->
               {% for row in records %}
-              <div class="table-row"
-                   data-name="{{ row['first_name'] }}"
-                   data-status="{{ row['school'] }}"
-                   data-updated="{{ row['year'] }}"
-                   data-rows="{{ row['score'] }}"
-                   data-key="{{ row['game'] }}">
-
-                <span>{{ row['first_name'] }}</span>
+              <div class="table-row">
                 <span>{{ row['game'] }}</span>
-                <span>{{ row['school'] }}</span>
-                <span>{{ row['year'] }}</span>
-                <span>{{ row['score'] }}</span>
+                <span>{{ row['matches_played'] }}</span>
+                <span>{{ '%.2f' | format(row['avg_score']) }}</span>
               </div>
               {% endfor %}
             </div>

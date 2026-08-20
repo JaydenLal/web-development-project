@@ -119,6 +119,34 @@ def index3():
     conn.close()
     return render_template('index3.html', records=records, q=q)
 
+
+# This connects the database and loads the database to display on index4.html
+@app.route('/index4')
+def index4():
+    conn = get_db_connection()
+    q = request.args.get('q', '').strip()
+
+    # SQL: game stats summary (matches played, average score)
+    query = '''
+         SELECT g.game,
+             COUNT(*) AS matches_played,
+               AVG(tm.score) AS avg_score
+        FROM game g
+        JOIN tournament_matches tm ON g.game_id = tm.game_id
+    '''
+
+    params = ()
+    if q:
+        q_like = f"%{q.lower()}%"
+        query += " WHERE LOWER(g.game) LIKE ?"
+        params = (q_like,)
+
+    query += " GROUP BY g.game_id, g.game ORDER BY matches_played DESC"
+
+    records = conn.execute(query, params).fetchall()
+    conn.close()
+    return render_template('index4.html', records=records, q=q)
+
 # About page
 @app.route('/about')
 def about():
