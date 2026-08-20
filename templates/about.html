@@ -18,7 +18,8 @@
       <div class="topbar-nav">
         <a href="/about" class="about">About</a>
         <select class="dropdown" onchange="location = this.value;">
-          <option value="">Player score sorted highest to lowest</option>
+          <option value="/about">About This Page</option>
+          <option value="/">Player score sorted highest to lowest</option>
           <option value="/index2">Player score sorted lowest to highest</option>
         </select>
       </div>
@@ -43,6 +44,13 @@
               to change the sort order and use the search box on the table section to
               find a player's name.
             </p>
+            </p>
+             This site was built using Python, Flask, and SQLite. 
+              The source code is available on 
+              <a href="https://github.com/JaydenLal/web-development-project" target="_blank">GitHub</a>.
+              This site is for educational purposes only and is not affiliated with any esports organization.
+              This was created for a school project and is not intended for commercial use.
+            </p>
 
             <p>
               How to use:
@@ -56,8 +64,11 @@
 
             <!-- image -->
             <div style="margin-top:18px;text-align:center;">
-              <img src="{{ url_for('static', filename='placeholder.png') }}" alt="Placeholder image" style="max-width:300px;width:100%;height:auto;" />
+              <img src="{{ url_for('static', filename='aboutthispage.png') }}" alt="This is how to use the site" style="max-width:1000px;width:100%;height:auto;" />
             </div>
+            <p>
+              - Jayden Lal
+            </p>
           </div>
         </div>
       </section>

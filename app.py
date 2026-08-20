@@ -72,6 +72,11 @@ def index2():
     conn.close()
     return render_template('index2.html', records=records, q=q)
 
+# About page
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 # If someone visits a page that does not exist, show the 404 page
 @app.errorhandler(404)
 def page_not_found(e):
