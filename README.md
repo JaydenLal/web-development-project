@@ -5,3 +5,5 @@ The target audience are those interested in Esports and want to know about NZ’
 
 # How to run
 download source code, open in VSCode, install Flask on the VSCode terminal, finally run it in VSCode with the terminal or "Run". Use the http://127.0.0.1:5000/ local webserver.
+
+## or use the website at https://web-development-project-g3d0.onrender.com
