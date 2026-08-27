@@ -84,7 +84,7 @@ body {
 .table-header-row,
 .table-row {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr 0.8fr;
+  grid-template-columns: 0.7fr 1fr 1.3fr 1.3fr 0.8fr 0.9fr 0.7fr;
   gap: 12px;
   align-items: center;
   padding: 12px 0;
@@ -117,7 +117,7 @@ body {
   .table-section { padding: 10px; overflow-x: auto; }
   .table-header-row,
   .table-row {
-    min-width: 520px;
+    min-width: 720px;
     gap: 8px;
     font-size: 0.82rem;
   }
