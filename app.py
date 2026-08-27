@@ -21,7 +21,7 @@ def index():
     # (Default Query) SQL query: get player names, game, school, year, and score
     # from the related tables, sorted from highest score to lowest
     query = '''
-        SELECT s.first_name, g.game, s.school, t.year, tm.score
+        SELECT s.first_name, s.last_name, g.game, s.school, t.year, tm.score
         FROM tournament_matches tm
         JOIN student s ON tm.student_id = s.student_id
         JOIN game g ON tm.game_id = g.game_id
@@ -30,9 +30,14 @@ def index():
 
     params = ()
     if q:
-        # If the user provided a search term, filter by first_name (case-insensitive)
-        query += " WHERE LOWER(s.first_name) LIKE ?"
-        params = (f"%{q.lower()}%",)
+        # Search first name, last name, or the full name (case-insensitive)
+        q_like = f"%{q.lower()}%"
+        query += (
+            " WHERE LOWER(s.first_name) LIKE ?"
+            " OR LOWER(s.last_name) LIKE ?"
+            " OR LOWER(s.first_name || ' ' || s.last_name) LIKE ?"
+        )
+        params = (q_like, q_like, q_like)
 
     # Always sort highest to lowest on this page
     query += " ORDER BY tm.score DESC"
@@ -53,7 +58,7 @@ def index2():
     # SQL query: get player names, game, school, year, and score
     # from the related tables, sorted from lowest score to highest
     query = '''
-        SELECT s.first_name, g.game, s.school, t.year, tm.score
+        SELECT s.first_name, s.last_name, g.game, s.school, t.year, tm.score
         FROM tournament_matches tm
         JOIN student s ON tm.student_id = s.student_id
         JOIN game g ON tm.game_id = g.game_id
@@ -62,8 +67,13 @@ def index2():
 
     params = ()
     if q:
-        query += " WHERE LOWER(s.first_name) LIKE ?"
-        params = (f"%{q.lower()}%",)
+        q_like = f"%{q.lower()}%"
+        query += (
+            " WHERE LOWER(s.first_name) LIKE ?"
+            " OR LOWER(s.last_name) LIKE ?"
+            " OR LOWER(s.first_name || ' ' || s.last_name) LIKE ?"
+        )
+        params = (q_like, q_like, q_like)
 
     # Sort lowest to highest on this page
     query += " ORDER BY tm.score ASC"
@@ -104,6 +114,7 @@ def index3():
         query += (
             " WHERE LOWER(s.first_name) LIKE ?"
             " OR LOWER(s.last_name) LIKE ?"
+            " OR LOWER(s.first_name || ' ' || s.last_name) LIKE ?"
             " OR LOWER(t.city) LIKE ?"
             " OR LOWER(g.game) LIKE ?"
             " OR CAST(tm.game_id AS TEXT) LIKE ?"
@@ -111,7 +122,7 @@ def index3():
             " OR CAST(tm.score AS TEXT) LIKE ?"
             " OR CAST(t.year AS TEXT) LIKE ?"
         )
-        params = (q_like, q_like, q_like, q_like, q_like, q_like, q_like, q_like)
+        params = (q_like, q_like, q_like, q_like, q_like, q_like, q_like, q_like, q_like)
 
     query += " ORDER BY t.year ASC, t.city ASC"
 

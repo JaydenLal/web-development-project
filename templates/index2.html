@@ -59,13 +59,13 @@
               <!-- Loop through every database record and show it as a row -->
               {% for row in records %}
               <div class="table-row"
-                   data-name="{{ row['first_name'] }}"
+                   data-name="{{ row['first_name'] }} {{ row['last_name'] }}"
                    data-status="{{ row['school'] }}"
                    data-updated="{{ row['year'] }}"
                    data-rows="{{ row['score'] }}"
                    data-key="{{ row['game'] }}">
 
-                <span>{{ row['first_name'] }}</span>
+                <span>{{ row['first_name'] }} {{ row['last_name'] }}</span>
                 <span>{{ row['game'] }}</span>
                 <span>{{ row['school'] }}</span>
                 <span>{{ row['year'] }}</span>
